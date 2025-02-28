@@ -1,0 +1,62 @@
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 680px;
+  --breakpoint-tabletMax: 980px;
+
+  --color-primary-50: #e1e8ef;
+  --color-primary-100: #d4dee7;
+  --color-primary-200: #b7c7d7;
+  --color-primary-300: #99b0c7;
+  --color-primary-400: #7c99b6;
+  --color-primary-500: #5e82a6;
+  --color-primary-600: #4c6b8a;
+  --color-primary-700: #3c546c;
+  --color-primary-800: #2c3d4f;
+  --color-primary-900: #1b2631;
+  --color-primary-950: #141c24;
+
+  --color-secondary-50: #faf5f0;
+  --color-secondary-100: #f4ece1;
+  --color-secondary-200: #e8d6bf;
+  --color-secondary-300: #ddc2a2;
+  --color-secondary-400: #d2af84;
+  --color-secondary-500: #c69963;
+  --color-secondary-600: #b78343;
+  --color-secondary-700: #926835;
+  --color-secondary-800: #6c4d28;
+  --color-secondary-900: #4b351b;
+  --color-secondary-950: #382814;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
