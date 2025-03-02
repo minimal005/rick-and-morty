@@ -19,18 +19,6 @@ export default function Page() {
             airDate="December 2, 2013"
             charactersCount={3}
           />
-          <EpisodeCard
-            name="Pilot"
-            episode="S01E01"
-            airDate="December 2, 2013"
-            charactersCount={3}
-          />
-          <EpisodeCard
-            name="Pilot"
-            episode="S01E01"
-            airDate="December 2, 2013"
-            charactersCount={3}
-          />
         </div>
       </section>
     </Container>

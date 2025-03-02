@@ -1,9 +1,14 @@
 import { All } from "./all";
 
+export enum Status {
+  Alive = "Alive",
+  Dead = "Dead",
+  Unknown = "Unknown",
+}
 export type CharacterType = {
   id: number;
   name: string;
-  status: string;
+  status: Status;
   species: string;
   type: string;
   gender: string;

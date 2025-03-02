@@ -1,20 +1,26 @@
 import { Stack } from "react-bootstrap";
 import { CharacterType as Character } from "../../types/character";
-import { Card } from "./Card";
+import { CustomCard } from "./Card";
 
 interface Props {
   characters: Character[];
+  children?: React.ReactNode;
 }
 export const CardsList: React.FC<Props> = (props) => {
-  const { characters = [] } = props;
+  const { characters = [], children } = props;
 
   return (
     <>
-      <Stack direction="horizontal" gap={3} className="flex-wrap">
+      <Stack
+        direction="horizontal"
+        gap={3}
+        className="flex-wrap justify-center"
+      >
         {characters.map((character) => (
-          <Card key={character.id} character={character} />
+          <CustomCard key={character.id} character={character} />
         ))}
       </Stack>
+      {children}
     </>
   );
 };

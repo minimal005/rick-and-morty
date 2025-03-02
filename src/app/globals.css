@@ -6,6 +6,8 @@
 
 @theme {
   --breakpoint-mobile: 320px;
+  --breakpoint-mobileMax: 480px;
+  --breakpoint-tabletMin: 600px;
   --breakpoint-tablet: 680px;
   --breakpoint-tabletMax: 980px;
 
@@ -48,6 +50,10 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
 body {
   color: var(--foreground);

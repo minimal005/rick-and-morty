@@ -19,18 +19,6 @@ export default function Page() {
             type="Space station"
             residentsCount={3}
           />
-          <LocationCard
-            name="Testicle Monster Dimension"
-            dimension="unknown"
-            type="Space station"
-            residentsCount={3}
-          />
-          <LocationCard
-            name="Testicle Monster Dimension"
-            dimension="unknown"
-            type="Space station"
-            residentsCount={3}
-          />
         </div>
       </section>
     </Container>

@@ -4,7 +4,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link href="/" className="text-decoration-none">
-      <div className="flex items-center gap-4 z-10  ">
+      <div className="flex flex-col items-center  z-10  ">
         <Image
           src="/icon.svg"
           height="70"

@@ -7,7 +7,7 @@ export default function Navigation() {
       as="ul"
       direction="horizontal"
       gap={4}
-      className="z-10 text-2xl text-primary-100 transition-colors "
+      className="z-10 text-2xl flex-col md:flex-row text-primary-100 transition-colors ms-auto"
     >
       <Link
         href="/characters"
